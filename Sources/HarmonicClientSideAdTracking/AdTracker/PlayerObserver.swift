@@ -12,7 +12,7 @@ import os
 @MainActor
 public class PlayerObserver: ObservableObject {
     private static let logger = Logger(
-        subsystem: Bundle.module.bundleIdentifier!,
+        subsystem: Bundle(for: PlayerObserver.self).bundleIdentifier!,
         category: String(describing: PlayerObserver.self)
     )
     

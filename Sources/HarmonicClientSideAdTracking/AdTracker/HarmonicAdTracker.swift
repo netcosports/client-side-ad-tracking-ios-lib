@@ -18,7 +18,7 @@ private let AD_END_TOLERANCE_FOR_TIMEJUMP_RESET: Double = 500
 @MainActor
 public class HarmonicAdTracker {
     private static let logger = Logger(
-        subsystem: Bundle.module.bundleIdentifier!,
+        subsystem: Bundle(for: HarmonicAdTracker.self).bundleIdentifier!,
         category: String(describing: HarmonicAdTracker.self)
     )
     

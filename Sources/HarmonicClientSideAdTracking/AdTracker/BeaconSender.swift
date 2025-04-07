@@ -19,7 +19,7 @@ private let MAX_TOLERANCE_EVENT_END_TIME: Double = 1_000
 @MainActor
 class BeaconSender {
     private static let logger = Logger(
-        subsystem: Bundle.module.bundleIdentifier!,
+        subsystem: Bundle(for: BeaconSender.self).bundleIdentifier!,
         category: String(describing: BeaconSender.self)
     )
     

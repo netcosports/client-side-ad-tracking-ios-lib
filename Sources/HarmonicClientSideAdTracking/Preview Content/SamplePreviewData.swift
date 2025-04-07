@@ -23,7 +23,7 @@ var sampleAdBeacon = loadMetdataSample("sample-metadata.json")
 private func loadMetdataSample(_ filename: String) -> AdBeacon? {
     let data: Data
     
-    guard let file = Bundle.module.url(forResource: filename, withExtension: nil) else {
+    guard let file = Bundle(for: AdBeaconingSession.self).url(forResource: filename, withExtension: nil) else {
         fatalError("Couldn't find \(filename) in main bundle.")
     }
     
