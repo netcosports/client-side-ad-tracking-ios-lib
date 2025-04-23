@@ -16,8 +16,6 @@ Pod::Spec.new do |s|
   s.platform              = :ios
   s.ios.deployment_target = '15.0'
 
-  s.static_framework = true
-  
   s.source_files = 'Sources/**/*.{swift}'
 
 end
